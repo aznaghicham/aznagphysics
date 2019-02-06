@@ -1,1 +1,22 @@
-salam l3alam
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  var x=prompt("ادخل الرمز السري","");
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").load(x);
+  });
+});
+</script>
+</head>
+<body>
+
+
+<div id="div1"><h2>أضغط على الزر في الأسفل للحصول على نقط المراقبة</h2></div>
+
+<button>Lets go</button>
+
+</body>
+</html>
