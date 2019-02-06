@@ -3,10 +3,9 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-  var x=prompt("ادخل الرمز السري","");
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").load("results.html "+x);
+    $("#div1").load("results.html #"+$('#input').val());
   });
 });
 </script>
@@ -14,8 +13,8 @@ $(document).ready(function(){
 <body>
 
 
-<div id="div1"><h2>أضغط على الزر في الأسفل للحصول على نقط المراقبة</h2></div>
-
+<div id="div1"><h2>أدخل الرمز السري للحصول على نقط المراقبة</h2></div>
+<input type="text" id="input" value="الرمز السري">
 <button>Lets go</button>
 
 </body>
